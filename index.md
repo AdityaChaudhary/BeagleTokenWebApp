@@ -13,16 +13,16 @@ buy_tokens_content: ["The only place to buy or sell BEAGLE safely is on Uniswap.
 ecosystem_heading: ecosystem
 ecosystem_subtext: Inspired by Ethereum’s vision, we have long committed to the ideals of permissionless access, security, and immutability, all indespensable components for a future where anyone in the world can access financial services without fear of discrimination or counterparty risk.
 ecosystem_type_one_heading: Community
-ecosystem_type_one_content: BEAGLE is created by the community, for the community, and is completely decentralized. Nicknamed the MOON COMPANION, loyal and compassionate BEAGLE will your companion to the moon ride. While you get your BEAGLEs, the BEAGLE engineers work hard to take BEAGLE to the moon and then beyond.
+ecosystem_type_one_content: "BEAGLE is created by the community, for the community, and is completely decentralized. Nicknamed the MOON COMPANION, a loyal and compassionate BEAGLE will be your companion for the moon ride. While you get your BEAGLEs, the BEAGLE engineers will work hard to take BEAGLE to the moon and then beyond. #MoonCompanion"
 ecosystem_type_two_heading: MEME-BASED
-ecosystem_type_two_content: ROVER is a meme-based cryptocurrency, sibling to DogeCoin and SHIBA, but with strong potential. It is a fully decentralized, community-based cryptocurrency. Although the token is considered to be a meme-token, we fully believe that BEAGLE will take you to the moon and beyond.
+ecosystem_type_two_content: "BEAGLE is a meme-based cryptocurrency, sibling to DogeCoin and SHIBA, but with very vast potential. Although the token is deemed as a meme-token, we fully believe that BEAGLE will take you to the moon and beyond. #TotheMoon"
 ecosystem_type_three_heading: REWARDS & TRUST
-ecosystem_type_three_content: BEAGLE not only rewards you by reaching moon, but to gain more trust. BEAGLE will dig up treasures and lottery for you from time to time. BEAGLE engineers are tirelessly working to add these features. All you have to do is get your BEAGLEs and HODL.
+ecosystem_type_three_content: "BEAGLE not only rewards by reaching the moon but to gain more trust, it will dig up Treasures and Lottery for you from time to time. BEAGLE engineers are tirelessly working on adding these features. All you have to do is get your BEAGLEs and HODL. #HODL #TREASURES"
 
 art_heading: Engineering Marvel
-art_subtext: Created by Crypto Engineers and Security specialists from across the world. BEAGLE is one of the most robust and secure ERC777 fungible token while remaining backward compatible with ERC-20.
-art_content_one: While other tokens are still using the old ERC-20 standard, our team of engineers architected this token on ERC-777 standard. Which is future proof and allows our team to create new features for future updates.
-art_content_two: Security by design - Several tokens today charge a percentage of fees per transaction which introduces vulnerabilities in the system. Based on our security research several millions have been stolen by hackers due to these insecure designs. Our security engineers designed new implementations to make the BEAGLE much more secure and robust.
+art_subtext: Created by Crypto Engineers and Security specialists across the globe, BEAGLE is one of the most robust and secure ERC777 fungible tokens while remaining backward compatible with ERC-20.
+art_content_one: While other tokens are still using the old ERC-20 standard, our team architected this token on the ERC-777 level. ERC-777 is future proof and allows our team to create new features for future updates.
+art_content_two: Security by design - Several tokens today charges a percentage of fees per transaction which causes vulnerabilities in the system. Based on our security analysis,  several million have been stolen by hackers due to these insecure designs. Therefore, our security engineers have designed new implementations that made the BEAGLE much more secure and robust.
 
 rescue_heading: Rescue
 rescue_content: Beagles are the most loyal and adorable dog breed ever. They always scooch in with you everywhere and want to be with you all the time. They love pleasing their masters.
