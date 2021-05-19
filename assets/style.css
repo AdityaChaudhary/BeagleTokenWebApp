@@ -1067,15 +1067,15 @@ mark{
 	z-index: 2;
 }
 .title-wrap p{
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 25px;
 	font-weight: 400;
 	color: #444;
 	width: 100%;
-	max-width: 580px;
 	margin: 0 auto;
 	padding-top: 80px;
 }
+
 .title-wrap .back-title{
 	position: absolute;
 	z-index: 1;

@@ -495,8 +495,6 @@
 									<div class="wpb_wrapper">
 										<p>{{page.banner_subtext}}</p>
 										<p>{{page.banner_subtext2}}</p>
-										<p>{{page.banner_subtext3}}</p>
-										<p>{{page.banner_subtext4}}</p>
 									</div>
 								</div>
 								<a class="btn btn-primary js-tilt  primary  ml-lg-0" href="#" data-gal="m_PageScroll2id"
@@ -526,6 +524,20 @@
 				style="width: 100%; height: 100%;"></canvas></div>
 	</section>
 
+	<section id="buy" class="wpb_row vc_row-fluid vc_custom_1529913961539 _mPS2id-t"
+		style="padding-bottom: 220px !important; font-size: 18px">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<p>{{page.banner_subtext3}}</p>
+						<p>{{page.banner_subtext4}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<section id="buy" class="wpb_row vc_row-fluid vc_custom_1529913961539 _mPS2id-t"
 		style="padding-top: 220px !important">
@@ -542,13 +554,12 @@
 							</div>
 						</div>
 
-						<div class="wpb_wrapper text-center" data-wow-delay="0.3s">
-							<div class="wpb_text_column wpb_content_element vc_custom_1529913961539">
+						<div class="wpb_wrapper" data-wow-delay="0.3s" style="display: flex; align-items: center; justify-content: center;">
+							<div class="wpb_text_column wpb_content_element vc_custom_1529913961539 vc_col-sm-8">
 								<div class="wpb_wrapper">
-									<p>{{page.buy_tokens_content}}</p>
-									<p>{{page.buy_tokens_content2}}</p>
-									<p>{{page.buy_tokens_content3}}</p>
-									<p>{{page.buy_tokens_content4}}</p>
+									{% for data in page.buy_tokens_content %}
+									<p>{{data}}</p>
+									{% endfor %}
 									<a class="btn btn-primary js-tilt  primary  " href="#" data-gal="m_PageScroll2id"
 										data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"
 										target="_self">
@@ -591,11 +602,13 @@
 						<div class="wpb_wrapper ">
 							<div class="title-wrap text-center">
 								<div class="back-title ">{{page.ecosystem_heading}}</div>
-								<p>
+								<p style="max-width: inherit">
 									{{page.ecosystem_subtext}}
 								</p>
-								<p><b>BEAGLE is now particularly well positioned for community-led growth, development,
-										and self-sustainability</b></p>
+								<p style="padding-top: 20px">
+									<b>BEAGLE is now particularly well positioned for community-led growth, development,
+										and self-sustainability</b>
+								</p>
 							</div>
 
 						</div>
@@ -686,7 +699,7 @@
 					<div class="vc_column-inner ">
 						<div class="wpb_wrapper ">
 							<div class="img-wrap">
-								<img src="./assets/1@2x.svg" alt="" width="445" height="501">
+								<img src="./assets/ether-2.jpeg" alt="" width="445">
 							</div>
 
 						</div>
@@ -717,7 +730,7 @@
 					<div class="vc_column-inner ">
 						<div class="wpb_wrapper ">
 							<div class="img-wrap">
-								<img src="./assets/2@2x.svg" alt="" width="445" height="319">
+								<img src="./assets/ether-1.jpeg" alt="">
 							</div>
 
 						</div>
@@ -753,12 +766,12 @@
 								<div class="back-title ">{{page.timeline_heading}}</div>
 								<p>{{page.timeline_subtext}}</p>
 
-								<p>
+								<p style="padding-top: 20px">
 									Similarly BEAGLE token also exists to serve the community. For every transaction a
 									certain amount of tokens are donated from the BEAGLE Reservoir account. Yes, you
 									read it right! You are never charged not even a single token.
 								</p>
-								<p>
+								<p style="padding-top: 20px">
 									And yes, you guessed it right. We will launch a community effort to realize the care taking of Beagles across the world. Admittedly very surprisingly, many Beagles actually need to be rescued worldwide. The more BEAGLE tokens you buys, the more help Beagles get. #BEAGLES-save-BEAGLES
 								</p>
 							</div>
@@ -861,7 +874,7 @@
 									<div class="vc_column-inner ">
 										<div class="wpb_wrapper">
 											<div class="img-wrap">
-												<img src="./assets/app@2x.png" alt="" width="540" height="609">
+												<img src="./assets/security.jpg" alt="">
 											</div>
 
 										</div>
@@ -899,16 +912,16 @@
 								{% for data in page.faq_array_one %}
 
 								<div class="card">
-									<div class="card-header" id="heading-id609e7466463e0-{{data.index}}">
+									<div class="card-header" id="heading-id609e7466463e0-{{forloop.index}}">
 										<a class="background-white " data-toggle="collapse"
-											data-target="#collapse-id609e7466463e0-{{data.index}}" aria-expanded="false"
-											aria-controls="collapse-id609e7466463e0-{{data.index}}">
+											data-target="#collapse-id609e7466463e0-{{forloop.index}}" aria-expanded="false"
+											aria-controls="collapse-id609e7466463e0-{{forloop.index}}">
 											{{data.question}}
 										</a>
 									</div>
 
-									<div id="collapse-id609e7466463e0-{{data.index}}" class="collapse"
-										aria-labelledby="heading-id609e7466463e0-{{data.index}}"
+									<div id="collapse-id609e7466463e0-{{forloop.index}}" class="collapse"
+										aria-labelledby="heading-id609e7466463e0-{{forloop.index}}"
 										data-parent="#accordion-id609e7466463e0">
 										<div class="card-body">
 											<h6>{{data.question}}</h6>
@@ -932,16 +945,16 @@
 								{% for data in page.faq_array_two %}
 
 								<div class="card">
-									<div class="card-header" id="heading-id609e7466466a7-{{data.index}}">
+									<div class="card-header" id="heading-id609e7466466a7-{{forloop.index}}">
 										<a class="background-white " data-toggle="collapse"
-											data-target="#collapse-id609e7466466a7-{{data.index}}" aria-expanded="false"
-											aria-controls="collapse-id609e7466466a7-{{data.index}}">
+											data-target="#collapse-id609e7466466a7-{{forloop.index}}" aria-expanded="false"
+											aria-controls="collapse-id609e7466466a7-{{forloop.index}}">
 											{{data.question}}
 										</a>
 									</div>
 
-									<div id="collapse-id609e7466466a7-{{data.index}}" class="collapse "
-										aria-labelledby="heading-id609e7466466a7-{{data.index}}"
+									<div id="collapse-id609e7466466a7-{{forloop.index}}" class="collapse "
+										aria-labelledby="heading-id609e7466466a7-{{forloop.index}}"
 										data-parent="#accordion-id609e7466466a7">
 										<div class="card-body">
 											<h6>{{data.question}}</h6>
