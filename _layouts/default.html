@@ -1,494 +1,993 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js no-svg js_active  vc_desktop  vc_transform  vc_transform "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en-US" class="no-js no-svg js_active  vc_desktop  vc_transform  vc_transform ">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>Beagle Token</title>
-<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
-<link rel="dns-prefetch" href="http://s.w.org/">
-<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="apple-touch-icon" sizes="57x57" href="./assets/beagle/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./assets/beagle/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./assets/beagle/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./assets/beagle/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./assets/beagle/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./assets/beagle/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./assets/beagle/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./assets/beagle/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./assets/beagle/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./assets/beagle/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/beagle/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./assets/beagle/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/beagle/favicon-16x16.png">
-<link rel="manifest" href="./assets/beagle/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./assets/beagle/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+	<title>Beagle Token</title>
+	<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+	<link rel="dns-prefetch" href="http://s.w.org/">
+	<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
 
-		<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script src="./assets/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
+	<link rel="apple-touch-icon" sizes="57x57" href="./assets/beagle/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./assets/beagle/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./assets/beagle/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./assets/beagle/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./assets/beagle/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./assets/beagle/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./assets/beagle/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./assets/beagle/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/beagle/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./assets/beagle/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/beagle/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./assets/beagle/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/beagle/favicon-16x16.png">
+	<link rel="manifest" href="./assets/beagle/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./assets/beagle/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>
+			.fluid-width-video-wrapper {
+				width: 100%;
+				position: relative;
+				padding: 0;
+			}
+
+			.fluid-width-video-wrapper iframe,
+			.fluid-width-video-wrapper object,
+			.fluid-width-video-wrapper embed {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</div>
+	<script src="./assets/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
 	<link rel="stylesheet" href="./assets/style.min.css" type="text/css" media="all">
-<link rel="stylesheet" href="./assets/styles.css" type="text/css" media="all">
-<link rel="stylesheet" href="./assets/bootstrap.min.css" type="text/css" media="all">
-<link rel="stylesheet" href="./assets/font-awesome.min.css" type="text/css" media="all">
-<link rel="stylesheet" href="./assets/owl.carousel.css" type="text/css" media="all">
-<link rel="stylesheet" href="./assets/owl.transitions.css" type="text/css" media="all">
-<link rel="stylesheet" href="./assets/style.css" type="text/css" media="all">
-<style type="text/css">
+	<link rel="stylesheet" href="./assets/styles.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./assets/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./assets/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./assets/owl.carousel.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./assets/owl.transitions.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./assets/style.css" type="text/css" media="all">
+	<style type="text/css">
+		.loader {
+			background-color: #fff;
+		}
 
-    .loader {background-color: #fff;}
-    div.loader svg rect, div.loader svg path {fill: #7b5eea;}
-    .menu-back.dark .nav-link:hover, .menu-back.dark .nav-link:active, .nav-link:hover, .nav-link:active,
-    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    	color: #7b5eea !important;
-    	border-color: #7b5eea !important;
-    }
-    @media (max-width: 767px) {
-    	.menu-back {
-    	background-color:
-    	}
-	}
-    @media (max-width: 767px) {
-    	.navbar-light .navbar-nav .nav-link {
-    	color:
-    	}
-	}
-    .hero-center-wrap p span.font-big-color,
-	.countdown li,
-	.table-sale.future-price h4,
-	.btn-primary.table-ver,
-	.nav-item ul li a:hover,
-	.nav-item ul li a:active,
-	.nav-item ul li a:focus,
-	.title-wrap .back-title,
-	.app-btn,
-	.app-btn:hover,
-	.modal-body h3,
-	.roadmap-box p.plan span,
-	.footer-list li a:hover,
-	.footer p a,
-	.footer p a:hover,
-	.nav-item ul li a.active-subnav,
-	.menu-back.dark .nav-item ul li a.active-subnav,
-	.menu-back.dark .nav-item ul li a:hover,
-	.demo a:hover{
-		color: #7b5eea;
-	}
+		div.loader svg rect,
+		div.loader svg path {
+			fill: #7b5eea;
+		}
 
-	.menu-back .sub-menu .current_page_item a {
-    color: #7b5eea !important;
-	}
-	.menu-back.dark .nav-link:hover,
-	.menu-back.dark .nav-link:active,
-	.nav-link:hover,
-	.nav-link:active {
-		color: #7b5eea !important;
-		border-color: #7b5eea !important;
-	}
-	.nav-link.mPS2id-highlight,
-	.menu-back.dark .nav-link.mPS2id-highlight{
-		color: #7b5eea !important;
-		border-color: #7b5eea !important;
-	}
-	.footer-list li a.text-white:hover,
-	.color-pr{
-		color: #7b5eea !important;
-	}
-	.btn-primary.table-ver:active,
-	.btn-primary.table-ver:focus{
-		color: #7b5eea !important;
-	}
-	.hero-center-wrap p span.back-color,
-	.btn-primary,
-	.btn-primary:hover,
-	.countdown p span,
-	.background-color,
-	.table-sale.future-price p span,
-	.line-sep,
-	.next-roadmap:hover,
-	.prev-roadmap:hover,
-	#owl-roadmap:before,
-	.app-list li:before,
+		.menu-back.dark .nav-link:hover,
+		.menu-back.dark .nav-link:active,
+		.nav-link:hover,
+		.nav-link:active,
+		.navbar-light .navbar-nav .nav-link:focus,
+		.navbar-light .navbar-nav .nav-link:hover {
+			color: #7b5eea !important;
+			border-color: #7b5eea !important;
+		}
 
-	.progress-bar,
-	.team-img-mask,
-	.roadmap-box p span,
-	.accordion-style .card-header a:hover,
-	.accordion-style .card-header a:before,
-	.accordion-style .card-header a:after,
-	input.btn.btn-primary,
-	.prev-roadmap.dark,
-	.next-roadmap.dark{
-		background-color: #7b5eea !important;
-	}
-	.table-sale.future-price .table-line,
-	.nav-item:hover ul,
-	.roadmap-box:after,
-	.accordion-style .card-header a,
-	.item.blue .roadmap-box.next-road:after,
-	.item.blue-gradient .roadmap-box.next-road:after{
-		border-color: #7b5eea;
-	}
-	.btn-primary:focus,
-	.btn-primary:active{
-		background-color: #7b5eea !important;
-	}
-	.scene path:first-child ,
-	.scene path:nth-child(2),
-	.scene path:nth-child(3),
-	.scene path:nth-child(4),
-	.scene path:nth-child(5),
-	.scene path:nth-child(6),
-	.scene path:nth-child(7) {
-		fill: #7b5eea;
-	}
-	figure.vimeo a:before, figure.youtube a:before {
-		border-left: 10px solid #7b5eea;
-	}
-	figure.vimeo:hover a:after, figure.youtube:hover a:after {
-		background:#7b5eea;
-	}
-	::selection {
-		background-color: #7b5eea;
-	}
-	::-moz-selection {
-		background-color: #7b5eea;
-	}
+		@media (max-width: 767px) {
+			.menu-back {
+				background-color:
+			}
+		}
 
-	body {
-		font-family: Quicksand, sans-serif !important;
-	}
+		@media (max-width: 767px) {
+			.navbar-light .navbar-nav .nav-link {
+				color:
+			}
+		}
 
-</style>
-<link rel="stylesheet" id="js_composer_front-css" href="./assets/js_composer.min.css" type="text/css" media="all">
-		<style type="text/css" id="wp-custom-css">
-			.hero-center-wrap.relative-on-lg .lp-2 p {
-	letter-spacing: 2px;
-}
-@media (max-width: 991px){
-.hero-center-wrap.relative-on-lg p {
-	letter-spacing: 0px;
-}
-}
-.navbar-light .navbar-nav .nav-link {
-    color: #424242;
-}
-@media (max-width: 991px){
-.crow .hero-center-wrap.relative-on-lg{
-	position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    z-index: 2;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-}
-section > .row {
-  margin-right: 0;
-  margin-left: 0;
-}
-section > .row > .vc_column_container > .vc_column-inner{
-  padding-right: 0;
-  padding-left: 0;
-}		</style>
-		<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1539743169063{background-color: rgba(245,231,252,0.9) !important;*background-color: rgb(245,231,252) !important;}.vc_custom_1531300104474{padding-top: 110px !important;}.vc_custom_1525855851050{padding-top: 110px !important;padding-bottom: 110px !important;}.vc_custom_1525859427137{padding-top: 110px !important;padding-bottom: 110px !important;background-color: #283038 !important;}.vc_custom_1529913961539{padding-top: 110px !important;}.vc_custom_1539743239592{padding-bottom: 110px !important;}.vc_custom_1528861551065{padding-top: 110px !important;padding-bottom: 110px !important;background-image: url(./assets/parallax-1.jpg) !important;}.vc_custom_1528861557550{padding-top: 110px !important;padding-bottom: 110px !important;}.vc_custom_1531730827256{padding-top: 110px !important;padding-bottom: 80px !important;background-color: #283038 !important;}.vc_custom_1528861563579{padding-top: 110px !important;padding-bottom: 110px !important;}.vc_custom_1528861569719{padding-top: 110px !important;padding-bottom: 110px !important;background-color: #f0f1f6 !important;}.vc_custom_1528861576846{padding-top: 110px !important;padding-bottom: 110px !important;}.vc_custom_1531730523744{margin-bottom: 24px !important;}.vc_custom_1528861487473{margin-top: 24px !important;}.vc_custom_1528861506884{margin-top: 48px !important;}.vc_custom_1531299818805{margin-top: 4px !important;}.vc_custom_1531730577159{margin-bottom: 16px !important;}.vc_custom_1531473934254{margin-bottom: 60px !important;}.vc_custom_1531473917149{margin-bottom: 0px !important;}.vc_custom_1525939288403{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 80px !important;padding-bottom: 80px !important;}.vc_custom_1525942237913{margin-bottom: 16px !important;}.vc_custom_1525942228319{margin-bottom: 16px !important;}.vc_custom_1531474144846{margin-bottom: 60px !important;padding-top: 80px !important;}.vc_custom_1531474085650{margin-bottom: 0px !important;}.vc_custom_1531474320862{margin-bottom: 0px !important;}.vc_custom_1526292035169{margin-bottom: 60px !important;}.vc_custom_1531300427116{margin-bottom: 35px !important;padding-top: 50px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style type="text/css">/* Chart.js */
-@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+		.hero-center-wrap p span.font-big-color,
+		.countdown li,
+		.table-sale.future-price h4,
+		.btn-primary.table-ver,
+		.nav-item ul li a:hover,
+		.nav-item ul li a:active,
+		.nav-item ul li a:focus,
+		.title-wrap .back-title,
+		.app-btn,
+		.app-btn:hover,
+		.modal-body h3,
+		.roadmap-box p.plan span,
+		.footer-list li a:hover,
+		.footer p a,
+		.footer p a:hover,
+		.nav-item ul li a.active-subnav,
+		.menu-back.dark .nav-item ul li a.active-subnav,
+		.menu-back.dark .nav-item ul li a:hover,
+		.demo a:hover {
+			color: #7b5eea;
+		}
 
-<body class="page-template page-template-page-templates page-template-template-canvas page-template-page-templatestemplate-canvas-php page page-id-130 wpb-js-composer js-comp-ver-6.1 vc_responsive" data-new-gr-c-s-check-loaded="14.1010.0" data-gr-ext-installed="">
-<div id="menu-wrap" class="menu-back cbp-af-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light mx-lg-0">
-                    <a class="navbar-brand" href="#">
-												<img src="./assets/beagle/beagle-logo.png" width="40"/>
-												Beagle Token
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <span class="menu-icon__line menu-icon__line-left"></span>
-                            <span class="menu-icon__line"></span>
-                            <span class="menu-icon__line menu-icon__line-right"></span>
-                        </span>
-                    </button>
+		.menu-back .sub-menu .current_page_item a {
+			color: #7b5eea !important;
+		}
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul id="onepage" class="navbar-nav ml-auto"><li id="menu-item-433" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-433 nav-item"><a href="#buy" class="nav-link _mPS2id-h">Buy Tokens</a></li>
-<li id="menu-item-434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-434 nav-item"><a href="#ecosystem" class="nav-link _mPS2id-h">Ecosystem</a></li>
-<li id="menu-item-436" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-436 nav-item"><a href="#art" class="nav-link _mPS2id-h">Art</a></li>
-<li id="menu-item-437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-437 nav-item"><a href="#rescue" class="nav-link _mPS2id-h">Rescue</a></li>
-<li id="menu-item-438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-438 nav-item"><a href="#timeline" class="nav-link _mPS2id-h">Timeline</a></li>
-<li id="menu-item-438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-438 nav-item"><a href="#lottery" class="nav-link _mPS2id-h">Lottery</a></li>
-<li id="menu-item-438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-438 nav-item"><a href="#community" class="nav-link _mPS2id-h">Community</a></li>
-</ul>                                                <div class="header-btn">
-                            <a class="btn btn-primary js-tilt _mPS2id-h" href="#" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Buy Now</span></a>
-                        </div>
-                                            </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
+		.menu-back.dark .nav-link:hover,
+		.menu-back.dark .nav-link:active,
+		.nav-link:hover,
+		.nav-link:active {
+			color: #7b5eea !important;
+			border-color: #7b5eea !important;
+		}
 
-					<section class="wpb_row vc_row-fluid height-auto-lg hide-over vc_custom_1539743169063 vc_row-has-fill full-height"><div class="hero-center-wrap relative-on-lg"><div class="container"><div class="row"><div class="text-center text-lg-left parallax-fade-top align-self-center z-bigger wpb_column vc_column_container vc_col-sm-6" style="top: 0px; opacity: 1;"><div class="vc_column-inner "><div class="wpb_wrapper ">
-						<h2 style="text-align: left" class="vc_custom_heading">{{page.banner_heading}}</h2>
-	<div class="wpb_text_column wpb_content_element  vc_custom_1531730523744 mt-3 mb-4 pb-3 font-weight-normal">
-		<div class="wpb_wrapper">
-			<p>{{page.banner_subtext}}</p>
-		</div>
-	</div>
-  <a class="btn btn-primary js-tilt  primary  ml-lg-0" href="#" data-gal="m_PageScroll2id" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" target="_self"><span>Whitepaper</span></a>
-</div></div></div><div class="header-img wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="img-wrap">
-            <img src="./assets/beagle/all-dogs.png" alt="" style="min-width: auto">
-    </div>
+		.nav-link.mPS2id-highlight,
+		.menu-back.dark .nav-link.mPS2id-highlight {
+			color: #7b5eea !important;
+			border-color: #7b5eea !important;
+		}
 
-</div></div></div></div></div></div><div class="ocean"><div class="wave"></div><div class="wave"></div></div><div id="particles-js" class="min-height"><canvas class="particles-js-canvas-el" width="2560" height="992" style="width: 100%; height: 100%;"></canvas></div></section>
+		.footer-list li a.text-white:hover,
+		.color-pr {
+			color: #7b5eea !important;
+		}
 
+		.btn-primary.table-ver:active,
+		.btn-primary.table-ver:focus {
+			color: #7b5eea !important;
+		}
 
-<section id="buy" class="wpb_row vc_row-fluid vc_custom_1529913961539 _mPS2id-t" style="padding-top: 220px !important">
-	<div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner ">
+		.hero-center-wrap p span.back-color,
+		.btn-primary,
+		.btn-primary:hover,
+		.countdown p span,
+		.background-color,
+		.table-sale.future-price p span,
+		.line-sep,
+		.next-roadmap:hover,
+		.prev-roadmap:hover,
+		#owl-roadmap:before,
+		.app-list li:before,
 
-	<div class="wpb_wrapper">
-    <div class="title-wrap text-center" style="margin-bottom:0">
-			<img src="./assets/beagle/beagle-3.jpg" style="position: relative;height: 150px;margin-top: -300px;"/>
-      <div class="back-title ">{{page.buy_tokens_heading}}</div>
-    </div>
-	</div>
+		.progress-bar,
+		.team-img-mask,
+		.roadmap-box p span,
+		.accordion-style .card-header a:hover,
+		.accordion-style .card-header a:before,
+		.accordion-style .card-header a:after,
+		input.btn.btn-primary,
+		.prev-roadmap.dark,
+		.next-roadmap.dark {
+			background-color: #7b5eea !important;
+		}
 
-	<div class="wpb_wrapper text-center" data-wow-delay="0.3s">
-		<div class="wpb_text_column wpb_content_element vc_custom_1529913961539">
-			<div class="wpb_wrapper">
-				<p>
-					{{page.buy_tokens_content}}
-				</p>
-				<a class="btn btn-primary js-tilt  primary  " href="#" data-gal="m_PageScroll2id" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" target="_self">
-					<span>Buy Beagle</span>
-				</a>
+		.table-sale.future-price .table-line,
+		.nav-item:hover ul,
+		.roadmap-box:after,
+		.accordion-style .card-header a,
+		.item.blue .roadmap-box.next-road:after,
+		.item.blue-gradient .roadmap-box.next-road:after {
+			border-color: #7b5eea;
+		}
 
-			</div>
-		</div>
-	</div>
+		.btn-primary:focus,
+		.btn-primary:active {
+			background-color: #7b5eea !important;
+		}
 
-	<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper "><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1525939288403  vc_custom_1525939288403"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);" class="vc_sep_line"></span></span>
-</div></div></div></div>
+		.scene path:first-child,
+		.scene path:nth-child(2),
+		.scene path:nth-child(3),
+		.scene path:nth-child(4),
+		.scene path:nth-child(5),
+		.scene path:nth-child(6),
+		.scene path:nth-child(7) {
+			fill: #7b5eea;
+		}
 
+		figure.vimeo a:before,
+		figure.youtube a:before {
+			border-left: 10px solid #7b5eea;
+		}
 
-</div></div>
+		figure.vimeo:hover a:after,
+		figure.youtube:hover a:after {
+			background: #7b5eea;
+		}
 
-</div></div></section>
+		::selection {
+			background-color: #7b5eea;
+		}
 
-<section id="ecosystem" class="wpb_row vc_row-fluid vc_custom_1529913961539 _mPS2id-t"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="title-wrap text-center">
-      <div class="back-title ">{{page.ecosystem_heading}}</div>
-			<p>
-				{{page.ecosystem_subtext}}
-			</p>
-    </div>
+		::-moz-selection {
+			background-color: #7b5eea;
+		}
 
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s " data-scroll-reveal-id="9" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.3s">
-    <div class="concept-box">
-      <img class="mb-4" src="./assets/con-1@2x.svg" alt="" width="136" height="100">
-      <h5>{{page.ecosystem_type_one_heading}}</h5>
-      <p>{{page.ecosystem_type_one_content}}</p>
-    </div>
+		body {
+			font-family: Quicksand, sans-serif !important;
+		}
+	</style>
+	<link rel="stylesheet" id="js_composer_front-css" href="./assets/js_composer.min.css" type="text/css" media="all">
+	<style type="text/css" id="wp-custom-css">
+		.hero-center-wrap.relative-on-lg .lp-2 p {
+			letter-spacing: 2px;
+		}
 
-</div></div></div><div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.5s " data-scroll-reveal-id="10" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.5s">
-    <div class="concept-box">
-      <img class="mb-4" src="./assets/con-2@2x.svg" alt="" width="122" height="100">
-      <h5>{{page.ecosystem_type_two_heading}}</h5>
-      <p>{{page.ecosystem_type_two_content}}</p>
-    </div>
+		@media (max-width: 991px) {
+			.hero-center-wrap.relative-on-lg p {
+				letter-spacing: 0px;
+			}
+		}
 
-</div></div></div><div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.7s " data-scroll-reveal-id="11" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.7s">
-    <div class="concept-box">
-      <img class="mb-4" src="./assets/con-3@2x.svg" alt="" width="122" height="100">
-      <h5>{{page.ecosystem_type_three_heading}}</h5>
-      <p>{{page.ecosystem_type_three_content}}</p>
-    </div>
+		.navbar-light .navbar-nav .nav-link {
+			color: #424242;
+		}
 
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper "><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1525939288403  vc_custom_1525939288403"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);" class="vc_sep_line"></span></span>
-</div></div></div></div></div></div></section>
+		@media (max-width: 991px) {
+			.crow .hero-center-wrap.relative-on-lg {
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				left: 0;
+				z-index: 2;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		}
 
-<section id="art" class="wpb_row vc_row-fluid hide-over"><div class="container"><div class="row"><div class="align-self-center wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner " data-scroll-reveal="enter left and move 50px over 0.6s after 0.3s" data-scroll-reveal-id="12" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.3s"><h4 style="text-align: left" class="vc_custom_heading">{{page.art_heading}}</h4>
-	<div class="wpb_text_column wpb_content_element  vc_custom_1525942237913">
-		<div class="wpb_wrapper">
-			<p class="lead">{{page.art_subtext}}</p>
-			<p>{{page.art_content_one}}</p>
-			<p>{{page.art_content_two}}</p>
-		</div>
-	</div>
-</div></div></div><div class="order-first order-md-last mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-5 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="img-wrap">
-            <img src="./assets/1@2x.svg" alt="" width="445" height="501">
-    </div>
+		section>.row {
+			margin-right: 0;
+			margin-left: 0;
+		}
 
-</div></div></div></div></div></section>
+		section>.row>.vc_column_container>.vc_column-inner {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	</style>
+	<style type="text/css" data-type="vc_shortcodes-custom-css">
+		.vc_custom_1539743169063 {
+			background-color: rgba(245, 231, 252, 0.9) !important;
+			*background-color: rgb(245, 231, 252) !important;
+		}
 
-<section id="rescue" class="wpb_row vc_row-fluid"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper "><div class="vc_empty_space" style="height: 96px"><span class="vc_empty_space_inner"></span></div></div></div></div></div></div></section><section class="wpb_row vc_row-fluid hide-over vc_custom_1539743239592"><div class="container"><div class="row"><div class="mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="img-wrap">
-            <img src="./assets/2@2x.svg" alt="" width="445" height="319">
-    </div>
+		.vc_custom_1531300104474 {
+			padding-top: 110px !important;
+		}
 
-</div></div></div><div class="align-self-center wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1"><div class="vc_column-inner " data-scroll-reveal="enter right and move 50px over 0.6s after 0.3s" data-scroll-reveal-id="13" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.3s"><h4 style="text-align: left" class="vc_custom_heading">{{page.rescue_heading}}</h4>
-	<div class="wpb_text_column wpb_content_element  vc_custom_1525942228319">
-		<div class="wpb_wrapper">
-			<p>{{page.rescue_content}}</p>
-		</div>
-	</div>
-</div></div></div></div></div></section>
+		.vc_custom_1525855851050 {
+			padding-top: 110px !important;
+			padding-bottom: 110px !important;
+		}
 
-<section id="timeline" class="wpb_row vc_row-fluid vc_custom_1528861551065 vc_row-has-fill _mPS2id-t mPS2id-target mPS2id-target-first mPS2id-target-last"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="title-wrap text-center">
-      <div class="back-title ">{{page.timeline_heading}}</div>
-			<p>{{page.timeline_subtext}}</p>
-    </div>
+		.vc_custom_1525859427137 {
+			padding-top: 110px !important;
+			padding-bottom: 110px !important;
+			background-color: #283038 !important;
+		}
 
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner">
-	<div class="wpb_wrapper ">
-  <div class="customNavigation">
-    <a class="prev-roadmap "><i class="fa fa-angle-left"></i></a>
-    <a class="next-roadmap "><i class="fa fa-angle-right"></i></a>
-  </div>
+		.vc_custom_1529913961539 {
+			padding-top: 110px !important;
+		}
 
-  <div id="owl-roadmap" class="owl-carousel owl-theme ">
+		.vc_custom_1539743239592 {
+			padding-bottom: 110px !important;
+		}
 
-		{% for data in page.timeline_array %}
-			<div class="owl-item">
-				<div class="item ">
-					{% if data.type == 0 %}
-					<div class="roadmap-box background-white">
-						<p class="mb-4 achieved"><span>{{data.status}}</span></p>
-						<h6> {{data.heading}}</h6>
-						<p> {{data.text}}</p>
-					</div>
-					{% endif %}
-					{% if data.type == 1 %}
-					<div class="roadmap-box  current-road roadmap-shadow background-white">
-						<p class="mb-4 current"><span>Current</span></p>
-						<h6> Apr 2018.</h6>
-						<p> Token Sale Start</p>
-					</div>
-					{% endif %}
-					{% if data.type == 2 %}
-					<div class="roadmap-box next-road  background-white">
-						<p class="mb-4 plan"><span>Plan</span></p>
-						<h6> May 2018.</h6>
-						<p> Blockchain Dev Starts</p>
-					</div>
-					{% endif %}
+		.vc_custom_1528861551065 {
+			padding-top: 110px !important;
+			padding-bottom: 110px !important;
+			background-image: url(./assets/parallax-1.jpg) !important;
+		}
+
+		.vc_custom_1528861557550 {
+			padding-top: 110px !important;
+			padding-bottom: 110px !important;
+		}
+
+		.vc_custom_1531730827256 {
+			padding-top: 110px !important;
+			padding-bottom: 80px !important;
+			background-color: #283038 !important;
+		}
+
+		.vc_custom_1528861563579 {
+			padding-top: 110px !important;
+			padding-bottom: 110px !important;
+		}
+
+		.vc_custom_1528861569719 {
+			padding-top: 110px !important;
+			padding-bottom: 110px !important;
+			background-color: #f0f1f6 !important;
+		}
+
+		.vc_custom_1528861576846 {
+			padding-top: 110px !important;
+			padding-bottom: 110px !important;
+		}
+
+		.vc_custom_1531730523744 {
+			margin-bottom: 24px !important;
+		}
+
+		.vc_custom_1528861487473 {
+			margin-top: 24px !important;
+		}
+
+		.vc_custom_1528861506884 {
+			margin-top: 48px !important;
+		}
+
+		.vc_custom_1531299818805 {
+			margin-top: 4px !important;
+		}
+
+		.vc_custom_1531730577159 {
+			margin-bottom: 16px !important;
+		}
+
+		.vc_custom_1531473934254 {
+			margin-bottom: 60px !important;
+		}
+
+		.vc_custom_1531473917149 {
+			margin-bottom: 0px !important;
+		}
+
+		.vc_custom_1525939288403 {
+			margin-top: 0px !important;
+			margin-bottom: 0px !important;
+			padding-top: 80px !important;
+			padding-bottom: 80px !important;
+		}
+
+		.vc_custom_1525942237913 {
+			margin-bottom: 16px !important;
+		}
+
+		.vc_custom_1525942228319 {
+			margin-bottom: 16px !important;
+		}
+
+		.vc_custom_1531474144846 {
+			margin-bottom: 60px !important;
+			padding-top: 80px !important;
+		}
+
+		.vc_custom_1531474085650 {
+			margin-bottom: 0px !important;
+		}
+
+		.vc_custom_1531474320862 {
+			margin-bottom: 0px !important;
+		}
+
+		.vc_custom_1526292035169 {
+			margin-bottom: 60px !important;
+		}
+
+		.vc_custom_1531300427116 {
+			margin-bottom: 35px !important;
+			padding-top: 50px !important;
+		}
+	</style><noscript>
+		<style>
+			.wpb_animate_when_almost_visible {
+				opacity: 1;
+			}
+		</style>
+	</noscript>
+	<style type="text/css">
+		/* Chart.js */
+		@-webkit-keyframes chartjs-render-animation {
+			from {
+				opacity: 0.99
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes chartjs-render-animation {
+			from {
+				opacity: 0.99
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		.chartjs-render-monitor {
+			-webkit-animation: chartjs-render-animation 0.001s;
+			animation: chartjs-render-animation 0.001s;
+		}
+	</style>
+</head>
+
+<body
+	class="page-template page-template-page-templates page-template-template-canvas page-template-page-templatestemplate-canvas-php page page-id-130 wpb-js-composer js-comp-ver-6.1 vc_responsive"
+	data-new-gr-c-s-check-loaded="14.1010.0" data-gr-ext-installed="">
+	<div id="menu-wrap" class="menu-back cbp-af-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light mx-lg-0">
+						<a class="navbar-brand" href="#">
+							<img src="./assets/beagle/beagle-logo.png" width="40" />
+							Beagle Token
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon">
+								<span class="menu-icon__line menu-icon__line-left"></span>
+								<span class="menu-icon__line"></span>
+								<span class="menu-icon__line menu-icon__line-right"></span>
+							</span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul id="onepage" class="navbar-nav ml-auto">
+								<li id="menu-item-433"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-433 nav-item">
+									<a href="#buy" class="nav-link _mPS2id-h">Buy Tokens</a></li>
+								<li id="menu-item-434"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-434 nav-item">
+									<a href="#ecosystem" class="nav-link _mPS2id-h">Ecosystem</a></li>
+								<li id="menu-item-436"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-436 nav-item">
+									<a href="#art" class="nav-link _mPS2id-h">Art</a></li>
+								<li id="menu-item-437"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-437 nav-item">
+									<a href="#rescue" class="nav-link _mPS2id-h">Rescue</a></li>
+								<li id="menu-item-438"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-438 nav-item">
+									<a href="#timeline" class="nav-link _mPS2id-h">Timeline</a></li>
+								<li id="menu-item-438"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-438 nav-item">
+									<a href="#lottery" class="nav-link _mPS2id-h">Lottery</a></li>
+								<li id="menu-item-438"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-438 nav-item">
+									<a href="#community" class="nav-link _mPS2id-h">Community</a></li>
+							</ul>
+							<div class="header-btn">
+								<a class="btn btn-primary js-tilt _mPS2id-h" href="#" role="button"
+									data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Buy
+										Now</span></a>
+							</div>
+						</div>
+					</nav>
 				</div>
 			</div>
-		{% endfor %}
-
-		</div>
-
-  </div>
-</div></div></div></div></div></section>
-
-
-<section id="lottery" class="wpb_row vc_row-fluid vc_custom_1528861557550 _mPS2id-t"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="title-wrap text-center">
-      <div class="back-title ">{{page.lottery_heading}}</div>
-			<p>{{page.lottery_subtext}}</p>
-    </div>
-
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper "><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="align-self-center wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s " data-scroll-reveal-id="15" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper"><h4 style="text-align: left" class="vc_custom_heading">{{page.lottery_content_heading}}</h4>
-	<div class="wpb_text_column wpb_content_element  vc_custom_1531474320862">
-		<div class="wpb_wrapper">
-			<p class="lead">{{page.lottery_content_subtext}}</p>
-<ul class="app-list mb-5 mt-4">
-	{% for pointer in page.lottery_content_pointers %}
-  	<li>{{ pointer }}</li>
-	{% endfor %}
-</ul>
-
 		</div>
 	</div>
-</div></div></div><div class="order-first order-md-last mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper">
-    <div class="img-wrap">
-            <img src="./assets/app@2x.png" alt="" width="540" height="609">
-    </div>
 
-</div></div></div></div></div></div></div></div></div></section>
+	<section class="wpb_row vc_row-fluid height-auto-lg hide-over vc_custom_1539743169063 vc_row-has-fill full-height">
+		<div class="hero-center-wrap relative-on-lg">
+			<div class="container">
+				<div class="row">
+					<div class="text-center text-lg-left parallax-fade-top align-self-center z-bigger wpb_column vc_column_container vc_col-sm-6"
+						style="top: 0px; opacity: 1;">
+						<div class="vc_column-inner ">
+							<div class="wpb_wrapper ">
+								<h2 style="text-align: left" class="vc_custom_heading">{{page.banner_heading}}</h2>
+								<div
+									class="wpb_text_column wpb_content_element  vc_custom_1531730523744 mt-3 mb-4 pb-3 font-weight-normal">
+									<div class="wpb_wrapper">
+										<p>{{page.banner_subtext}}</p>
+										<p>{{page.banner_subtext2}}</p>
+										<p>{{page.banner_subtext3}}</p>
+										<p>{{page.banner_subtext4}}</p>
+									</div>
+								</div>
+								<a class="btn btn-primary js-tilt  primary  ml-lg-0" href="#" data-gal="m_PageScroll2id"
+									data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"
+									target="_self"><span>Whitepaper</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="header-img wpb_column vc_column_container vc_col-sm-6">
+						<div class="vc_column-inner ">
+							<div class="wpb_wrapper ">
+								<div class="img-wrap">
+									<img src="./assets/beagle/all-dogs.png" alt="" style="min-width: auto">
+								</div>
 
-<section id="faq" class="wpb_row vc_row-fluid vc_custom_1528861569719 vc_row-has-fill _mPS2id-t"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="title-wrap text-center">
-      <div class="back-title ">{{page.faq_heading}}</div>
-			<p>{{page.faq_subtext}}</p>
-    </div>
-
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s " data-scroll-reveal-id="23" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.3s">
-  <div id="accordion-id609e7466463e0" class="accordion-style">
-
-{% for data in page.faq_array_one %}
-
-		<div class="card">
-			<div class="card-header" id="heading-id609e7466463e0-{{data.index}}">
-				<a class="background-white " data-toggle="collapse" data-target="#collapse-id609e7466463e0-{{data.index}}" aria-expanded="false" aria-controls="collapse-id609e7466463e0-{{data.index}}">
-					{{data.question}}
-				</a>
-			</div>
-
-			<div id="collapse-id609e7466463e0-{{data.index}}" class="collapse" aria-labelledby="heading-id609e7466463e0-{{data.index}}" data-parent="#accordion-id609e7466463e0">
-				<div class="card-body">
-					<h6>{{data.question}}</h6>
-					<p>{{data.answer}}</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		{% endfor %}
-      </div>
-</div></div></div><div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.5s " data-scroll-reveal-id="24" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.5s">
-  <div id="accordion-id609e7466466a7" class="accordion-style">
-
-		{% for data in page.faq_array_two %}
-
-		<div class="card">
-	<div class="card-header" id="heading-id609e7466466a7-{{data.index}}">
-		<a class="background-white " data-toggle="collapse" data-target="#collapse-id609e7466466a7-{{data.index}}" aria-expanded="false" aria-controls="collapse-id609e7466466a7-{{data.index}}">
-			{{data.question}}
-		</a>
-	</div>
-
-	<div id="collapse-id609e7466466a7-{{data.index}}" class="collapse " aria-labelledby="heading-id609e7466466a7-{{data.index}}" data-parent="#accordion-id609e7466466a7">
-		<div class="card-body">
-			<h6>{{data.question}}</h6>
-			<p>{{data.answer}}</p>
+		<div class="ocean">
+			<div class="wave"></div>
+			<div class="wave"></div>
 		</div>
-	</div>
-</div>
-				{% endfor %}
+		<div id="particles-js" class="min-height"><canvas class="particles-js-canvas-el" width="2560" height="992"
+				style="width: 100%; height: 100%;"></canvas></div>
+	</section>
 
-      </div>
-</div></div></div></div></div></section><section id="community" class="wpb_row vc_row-fluid vc_custom_1528861576846 _mPS2id-t"><div class="container"><div class="row"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper ">
-    <div class="title-wrap text-center">
-      <div class="back-title ">{{page.community_heading}}</div>
-			<p>{{page.community_subtext}}</p>
-    </div>
 
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s " data-scroll-reveal-id="28" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true"><div class="wpb_wrapper " data-wow-delay="0.3s"></div></div></div></div></div></section>
+	<section id="buy" class="wpb_row vc_row-fluid vc_custom_1529913961539 _mPS2id-t"
+		style="padding-top: 220px !important">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+
+						<div class="wpb_wrapper">
+							<div class="title-wrap text-center" style="margin-bottom:0">
+								<img src="./assets/beagle/beagle-3.jpg"
+									style="position: relative;height: 150px;margin-top: -300px;" />
+								<div class="back-title ">{{page.buy_tokens_heading}}</div>
+							</div>
+						</div>
+
+						<div class="wpb_wrapper text-center" data-wow-delay="0.3s">
+							<div class="wpb_text_column wpb_content_element vc_custom_1529913961539">
+								<div class="wpb_wrapper">
+									<p>{{page.buy_tokens_content}}</p>
+									<p>{{page.buy_tokens_content2}}</p>
+									<p>{{page.buy_tokens_content3}}</p>
+									<p>{{page.buy_tokens_content4}}</p>
+									<a class="btn btn-primary js-tilt  primary  " href="#" data-gal="m_PageScroll2id"
+										data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"
+										target="_self">
+										<span>Buy Beagle</span>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper ">
+									<div
+										class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1525939288403  vc_custom_1525939288403">
+										<span class="vc_sep_holder vc_sep_holder_l"><span
+												style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);"
+												class="vc_sep_line"></span></span><span
+											class="vc_sep_holder vc_sep_holder_r"><span
+												style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);"
+												class="vc_sep_line"></span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="ecosystem" class="wpb_row vc_row-fluid vc_custom_1529913961539 _mPS2id-t">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="title-wrap text-center">
+								<div class="back-title ">{{page.ecosystem_heading}}</div>
+								<p>
+									{{page.ecosystem_subtext}}
+								</p>
+								<p><b>BEAGLE is now particularly well positioned for community-led growth, development,
+										and self-sustainability</b></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-4">
+					<div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s "
+						data-scroll-reveal-id="9" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.3s">
+							<div class="concept-box">
+								<img class="mb-4" src="./assets/con-1@2x.svg" alt="" width="136" height="100">
+								<h5>{{page.ecosystem_type_one_heading}}</h5>
+								<p>{{page.ecosystem_type_one_content}}</p> #MoonCompanion
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-4">
+					<div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.5s "
+						data-scroll-reveal-id="10" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.5s">
+							<div class="concept-box">
+								<img class="mb-4" src="./assets/con-2@2x.svg" alt="" width="122" height="100">
+								<h5>{{page.ecosystem_type_two_heading}}</h5>
+								<p>{{page.ecosystem_type_two_content}}</p>#TotheMoon
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-4">
+					<div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.7s "
+						data-scroll-reveal-id="11" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.7s">
+							<div class="concept-box">
+								<img class="mb-4" src="./assets/con-3@2x.svg" alt="" width="122" height="100">
+								<h5>{{page.ecosystem_type_three_heading}}</h5>
+								<p>{{page.ecosystem_type_three_content}}</p> #HODL #TREASURES
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div
+								class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1525939288403  vc_custom_1525939288403">
+								<span class="vc_sep_holder vc_sep_holder_l"><span
+										style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);"
+										class="vc_sep_line"></span></span><span
+									class="vc_sep_holder vc_sep_holder_r"><span
+										style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);"
+										class="vc_sep_line"></span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="art" class="wpb_row vc_row-fluid hide-over">
+		<div class="container">
+			<div class="row">
+				<div class="align-self-center wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner " data-scroll-reveal="enter left and move 50px over 0.6s after 0.3s"
+						data-scroll-reveal-id="12" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.3s">
+							<h4 style="text-align: left" class="vc_custom_heading">{{page.art_heading}}</h4>
+							<div class="wpb_text_column wpb_content_element  vc_custom_1525942237913">
+								<div class="wpb_wrapper">
+									<p class="lead">{{page.art_subtext}}</p>
+									<p>{{page.art_content_one}}</p>
+									<p>{{page.art_content_two}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="order-first order-md-last mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-5 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="img-wrap">
+								<img src="./assets/1@2x.svg" alt="" width="445" height="501">
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="rescue" class="wpb_row vc_row-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="vc_empty_space" style="height: 96px"><span class="vc_empty_space_inner"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="wpb_row vc_row-fluid hide-over vc_custom_1539743239592">
+		<div class="container">
+			<div class="row">
+				<div class="mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-5">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="img-wrap">
+								<img src="./assets/2@2x.svg" alt="" width="445" height="319">
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div
+					class="align-self-center wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1">
+					<div class="vc_column-inner " data-scroll-reveal="enter right and move 50px over 0.6s after 0.3s"
+						data-scroll-reveal-id="13" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.3s">
+							<h4 style="text-align: left" class="vc_custom_heading">{{page.rescue_heading}}</h4>
+							<div class="wpb_text_column wpb_content_element  vc_custom_1525942228319">
+								<div class="wpb_wrapper">
+									<p>{{page.rescue_content}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="timeline"
+		class="wpb_row vc_row-fluid vc_custom_1528861551065 vc_row-has-fill _mPS2id-t mPS2id-target mPS2id-target-first mPS2id-target-last">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="title-wrap text-center">
+								<div class="back-title ">{{page.timeline_heading}}</div>
+								<p>{{page.timeline_subtext}}</p>
+
+								<p>
+									Similarly BEAGLE token also exists to serve the community. For every transaction a
+									certain amount of tokens are donated from the BEAGLE Reservoir account. Yes, you
+									read it right! You are never charged not even a single token.
+								</p>
+								<p>
+									And yes, you guessed it right. We will launch a community effort to realize the care taking of Beagles across the world. Admittedly very surprisingly, many Beagles actually need to be rescued worldwide. The more BEAGLE tokens you buys, the more help Beagles get. #BEAGLES-save-BEAGLES
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner">
+						<div class="wpb_wrapper ">
+							<div class="customNavigation">
+								<a class="prev-roadmap "><i class="fa fa-angle-left"></i></a>
+								<a class="next-roadmap "><i class="fa fa-angle-right"></i></a>
+							</div>
+
+							<div id="owl-roadmap" class="owl-carousel owl-theme ">
+
+								{% for data in page.timeline_array %}
+								<div class="owl-item">
+									<div class="item ">
+										{% if data.type == 0 %}
+										<div class="roadmap-box background-white">
+											<p class="mb-4 achieved"><span>{{data.status}}</span></p>
+											<h6> {{data.heading}}</h6>
+											<p> {{data.text}}</p>
+										</div>
+										{% endif %}
+										{% if data.type == 1 %}
+										<div class="roadmap-box  current-road roadmap-shadow background-white">
+											<p class="mb-4 current"><span>Current</span></p>
+											<h6> Apr 2018.</h6>
+											<p> Token Sale Start</p>
+										</div>
+										{% endif %}
+										{% if data.type == 2 %}
+										<div class="roadmap-box next-road  background-white">
+											<p class="mb-4 plan"><span>Plan</span></p>
+											<h6> May 2018.</h6>
+											<p> Blockchain Dev Starts</p>
+										</div>
+										{% endif %}
+									</div>
+								</div>
+								{% endfor %}
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+
+	<section id="lottery" class="wpb_row vc_row-fluid vc_custom_1528861557550 _mPS2id-t">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="title-wrap text-center">
+								<div class="back-title ">{{page.lottery_heading}}</div>
+								<p>{{page.lottery_subtext}}</p>
+								You buy BEAGLES. HODL! And you get the rewards.
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="vc_row wpb_row vc_inner vc_row-fluid">
+								<div class="align-self-center wpb_column vc_column_container vc_col-sm-6">
+									<div class="vc_column-inner "
+										data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s "
+										data-scroll-reveal-id="15" data-scroll-reveal-initialized="true"
+										data-scroll-reveal-complete="true">
+										<div class="wpb_wrapper">
+											<h4 style="text-align: left" class="vc_custom_heading">
+												{{page.lottery_content_heading}}</h4>
+											<div class="wpb_text_column wpb_content_element  vc_custom_1531474320862">
+												<div class="wpb_wrapper">
+													<p class="lead">{{page.lottery_content_subtext}}</p>
+													<ul class="app-list mb-5 mt-4">
+														{% for pointer in page.lottery_content_pointers %}
+														<li>{{ pointer }}</li>
+														{% endfor %}
+													</ul>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="order-first order-md-last mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-6">
+									<div class="vc_column-inner ">
+										<div class="wpb_wrapper">
+											<div class="img-wrap">
+												<img src="./assets/app@2x.png" alt="" width="540" height="609">
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq" class="wpb_row vc_row-fluid vc_custom_1528861569719 vc_row-has-fill _mPS2id-t">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="title-wrap text-center">
+								<div class="back-title ">{{page.faq_heading}}</div>
+								<p>{{page.faq_subtext}}</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s "
+						data-scroll-reveal-id="23" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.3s">
+							<div id="accordion-id609e7466463e0" class="accordion-style">
+
+								{% for data in page.faq_array_one %}
+
+								<div class="card">
+									<div class="card-header" id="heading-id609e7466463e0-{{data.index}}">
+										<a class="background-white " data-toggle="collapse"
+											data-target="#collapse-id609e7466463e0-{{data.index}}" aria-expanded="false"
+											aria-controls="collapse-id609e7466463e0-{{data.index}}">
+											{{data.question}}
+										</a>
+									</div>
+
+									<div id="collapse-id609e7466463e0-{{data.index}}" class="collapse"
+										aria-labelledby="heading-id609e7466463e0-{{data.index}}"
+										data-parent="#accordion-id609e7466463e0">
+										<div class="card-body">
+											<h6>{{data.question}}</h6>
+											<p>{{data.answer}}</p>
+										</div>
+									</div>
+								</div>
+
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.5s "
+						data-scroll-reveal-id="24" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.5s">
+							<div id="accordion-id609e7466466a7" class="accordion-style">
+
+								{% for data in page.faq_array_two %}
+
+								<div class="card">
+									<div class="card-header" id="heading-id609e7466466a7-{{data.index}}">
+										<a class="background-white " data-toggle="collapse"
+											data-target="#collapse-id609e7466466a7-{{data.index}}" aria-expanded="false"
+											aria-controls="collapse-id609e7466466a7-{{data.index}}">
+											{{data.question}}
+										</a>
+									</div>
+
+									<div id="collapse-id609e7466466a7-{{data.index}}" class="collapse "
+										aria-labelledby="heading-id609e7466466a7-{{data.index}}"
+										data-parent="#accordion-id609e7466466a7">
+										<div class="card-body">
+											<h6>{{data.question}}</h6>
+											<p>{{data.answer}}</p>
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="community" class="wpb_row vc_row-fluid vc_custom_1528861576846 _mPS2id-t">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="title-wrap text-center">
+								<div class="back-title ">{{page.community_heading}}</div>
+								<p>{{page.community_subtext}}</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s "
+						data-scroll-reveal-id="28" data-scroll-reveal-initialized="true"
+						data-scroll-reveal-complete="true">
+						<div class="wpb_wrapper " data-wow-delay="0.3s"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<div class="section-footer section padding-top-big">
-		<div class="background-parallax" style="background-image: url(&quot;./assets/parallax-5.jpeg&quot;); background-position: center -4199px;" data-enllax-ratio=".5" data-enllax-type="background" data-enllax-direction="vertical"></div>
+		<div class="background-parallax"
+			style="background-image: url(&quot;./assets/parallax-5.jpeg&quot;); background-position: center -4199px;"
+			data-enllax-ratio=".5" data-enllax-type="background" data-enllax-direction="vertical"></div>
 		<div class="section py-4 background-dark-blue footer-bottom">
 			<div class="container">
 				<div class="row">
@@ -496,19 +995,20 @@ section > .row > .vc_column_container > .vc_column-inner{
 						<p>© Copyright 2021 - Beagle</p>
 					</div>
 					<div class="col-lg-6 footer mt-4 mr-auto mt-lg-0 mr-lg-0 text-center text-lg-right">
-							                        <!-- social icons -->
-	                        <div class="social">
+						<!-- social icons -->
+						<div class="social">
 
-	                                <a class="app-btn mx-2 mr-lg-3" href="https://twitter.com/token_beagle" target="_self">
-																		<i class="fa fa-twitter"></i>
-																	</a>
-	                                <a class="app-btn mx-2 mr-lg-3" href="https://www.reddit.com/user/BeagleToken" target="_self">
-																		<i class="fa fa-reddit"></i>
-																	</a>
+							<a class="app-btn mx-2 mr-lg-3" href="https://twitter.com/token_beagle" target="_self">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a class="app-btn mx-2 mr-lg-3" href="https://www.reddit.com/user/BeagleToken"
+								target="_self">
+								<i class="fa fa-reddit"></i>
+							</a>
 
-	                        </div>
-	                        <!-- social icons close -->
-	                    					</div>
+						</div>
+						<!-- social icons close -->
+					</div>
 				</div>
 			</div>
 		</div>
@@ -516,22 +1016,24 @@ section > .row > .vc_column_container > .vc_column-inner{
 
 	<div class="scroll-to-top" style="display: none;">to top</div>
 
-<script type="text/html" id="wpb-modifications"></script>
-<script type="text/javascript" src="./assets/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/jquery.countdown.min.js"></script>
-<script src="./assets/owl.carousel.min.js"></script>
-<script type="text/javascript" src="./assets/scripts.js" id="contact-form-7-js"></script>
-<script type="text/javascript" src="./assets/popper.min.js"></script>
-<script type="text/javascript" src="./assets/bootstrap.min.js"></script>
-<script type="text/javascript" src="./assets/plugins.js"></script>
-<script type="text/javascript" src="./assets/shape-svg.js"></script>
-<script type="text/javascript" src="./assets/canvas-x-o.js"></script>
-<script type="text/javascript" src="./assets/particles.js"></script>
-<script type="text/javascript" src="./assets/custom.js"></script>
-<script type="text/javascript" src="./assets/wp-embed.min.js"></script>
-<script type="text/javascript" src="./assets/js_composer_front.min.js"></script>
-<script type="text/javascript" src="./assets/forms.min.js"></script>
+	<script type="text/html" id="wpb-modifications"></script>
+	<script type="text/javascript" src="./assets/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/jquery.countdown.min.js"></script>
+	<script src="./assets/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="./assets/scripts.js" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="./assets/popper.min.js"></script>
+	<script type="text/javascript" src="./assets/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/plugins.js"></script>
+	<script type="text/javascript" src="./assets/shape-svg.js"></script>
+	<script type="text/javascript" src="./assets/canvas-x-o.js"></script>
+	<script type="text/javascript" src="./assets/particles.js"></script>
+	<script type="text/javascript" src="./assets/custom.js"></script>
+	<script type="text/javascript" src="./assets/wp-embed.min.js"></script>
+	<script type="text/javascript" src="./assets/js_composer_front.min.js"></script>
+	<script type="text/javascript" src="./assets/forms.min.js"></script>
 
 
 
-</body></html>
+</body>
+
+</html>
