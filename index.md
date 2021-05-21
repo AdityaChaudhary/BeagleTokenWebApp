@@ -8,7 +8,8 @@ banner_subtext3: BEAGLE is the most loving & caring dog. Most ready for the moon
 banner_subtext4: Welcome to the BEAGLE community-based and decentralized project! Hop on, as we launch to the moon.
 
 buy_tokens_heading: How To Buy
-buy_tokens_content: ["The only place to buy or sell BEAGLE safely is on Uniswap. Beware of some scams with same token names.", "Step 1: Create a Wallet", "Step 2: Navigate to https://app.uniswap.org and connect your wallet", "Step 3: Buy some Ether (ETH)", "Step 4: Swap Ether for BEAGLE! The more the merrier.", "Step 5: HODL! Diamond hands will get most rewards and lotteries."]
+buy_tokens_subtext: The only place to buy or sell BEAGLE safely is on Uniswap. Beware of some scams with same token names.
+buy_tokens_content: ["Create a Wallet", "Navigate to https://app.uniswap.org and connect your wallet", "Buy some Ether (ETH)", "Swap Ether for BEAGLE! The more the merrier.", "HODL! Diamond hands will get most rewards and lotteries."]
 
 ecosystem_heading: ecosystem
 ecosystem_subtext: Inspired by Ethereum’s vision, we have long committed to the ideals of permissionless access, security, and immutability, all indespensable components for a future where anyone in the world can access financial services without fear of discrimination or counterparty risk.
@@ -25,7 +26,7 @@ art_content_one: While other tokens are still using the old ERC-20 standard, our
 art_content_two: Security by design - Several tokens today charges a percentage of fees per transaction which causes vulnerabilities in the system. Based on our security analysis,  several million have been stolen by hackers due to these insecure designs. Therefore, our security engineers have designed new implementations that made the BEAGLE much more secure and robust.
 
 rescue_heading: Rescue
-rescue_content: Beagles are the most loyal and adorable dog breed ever. They always scooch in with you everywhere and want to be with you all the time. They love pleasing their masters.
+rescue_content: Beagles are the most loyal and friendly dog breed ever. They always scooch in with you and want to be with you all the time. They are master pleasers.
 
 
 

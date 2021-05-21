@@ -6,7 +6,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Beagle Token</title>
+	<title>Beagle Inu</title>
 	<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
 	<link rel="dns-prefetch" href="http://s.w.org/">
 	<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
@@ -401,6 +401,64 @@
 	    font-weight: 600;
 	    color: #7b5eea;
 		}
+
+		.ribbon {
+		  width: 100%;
+			height: 100%;
+			display: flex;
+		}
+		.step-heading {
+			width: 100px;
+			height: 100%;
+			background: #7b5eea;
+			display: flex;
+	    align-items: center;
+	    padding-left: 30px;
+		}
+		.step-text {
+			width: 100%;
+			height: 100%;
+			background: #ffffff;
+			color: #535353;
+			display: flex;
+	    align-items: center;
+	    padding-left: 10px;
+		}
+		.ribbon-container {
+		  width: 100%;
+		  height: 40px;
+		  position: relative;
+		  background: #7b5eea;
+		  left: 0;
+		  color: white;
+		  margin-top: 24px;
+			transform-style: preserve-3d;
+			border: 1px solid #7b5eea;
+    	box-shadow: 0 8px 6px -6px rgb(0 0 0 / 30%);
+		}
+		.ribbon-container:before {
+			content: "";
+	    position: absolute;
+	    right: -20px;
+	    bottom: -1px;
+	    width: 0;
+	    height: 0;
+	    z-index: -1;
+	    border-left: 20.5px solid #7b5eea;
+	    border-top: 20.5px solid transparent;
+	    border-bottom: 20.5px solid transparent;
+		}
+		.ribbon-container:after {
+		  content: "";
+		  position: absolute;
+		  left: -1px;
+		  bottom: 0;
+		  width: 0;
+		  height: 0;
+		  border-left: 20px solid white;
+		  border-top: 20px solid transparent;
+		  border-bottom: 20px solid transparent;
+		}
 	</style><noscript>
 		<style>
 			.wpb_animate_when_almost_visible {
@@ -408,33 +466,6 @@
 			}
 		</style>
 	</noscript>
-	<style type="text/css">
-		/* Chart.js */
-		@-webkit-keyframes chartjs-render-animation {
-			from {
-				opacity: 0.99
-			}
-
-			to {
-				opacity: 1
-			}
-		}
-
-		@keyframes chartjs-render-animation {
-			from {
-				opacity: 0.99
-			}
-
-			to {
-				opacity: 1
-			}
-		}
-
-		.chartjs-render-monitor {
-			-webkit-animation: chartjs-render-animation 0.001s;
-			animation: chartjs-render-animation 0.001s;
-		}
-	</style>
 </head>
 
 <body
@@ -447,7 +478,7 @@
 					<nav class="navbar navbar-expand-lg navbar-light bg-light mx-lg-0">
 						<a class="navbar-brand" href="#">
 							<img src="./assets/beagle/beagle-logo.png" width="40" />
-							Beagle Token
+							Beagle Inu
 						</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse"
 							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -469,7 +500,7 @@
 									<a href="#ecosystem" class="nav-link _mPS2id-h">Ecosystem</a></li>
 								<li id="menu-item-436"
 									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-436 nav-item">
-									<a href="#art" class="nav-link _mPS2id-h">Art</a></li>
+									<a href="#art" class="nav-link _mPS2id-h">Engineering</a></li>
 								<li id="menu-item-437"
 									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-437 nav-item">
 									<a href="#rescue" class="nav-link _mPS2id-h">Rescue</a></li>
@@ -588,20 +619,31 @@
 								<img src="./assets/beagle/beagle-3.jpg"
 									style="position: relative;height: 150px;margin-top: -300px;" />
 								<div class="back-title ">{{page.buy_tokens_heading}}</div>
+								<p>
+									{{page.buy_tokens_subtext}}
+								</p>
 							</div>
 						</div>
 
 						<div class="wpb_wrapper" data-wow-delay="0.3s" style="display: flex; align-items: center; justify-content: center;">
-							<div class="wpb_text_column wpb_content_element vc_custom_1529913961539 vc_col-sm-8">
+							<div class="wpb_text_column wpb_content_element vc_custom_1529913961539 vc_col-sm-8"
+									 style="padding-top: 50px !important;">
 								<div class="wpb_wrapper">
 									{% for data in page.buy_tokens_content %}
-									<p>{{data}}</p>
+									<div class="ribbon-container">
+									  <div class="ribbon">
+											<span class="step-heading">Step {{forloop.index + 1}}</span>
+											<div class="step-text">{{data}}</div>
+										</div>
+									</div>
 									{% endfor %}
-									<a class="btn btn-primary js-tilt  primary  " href="#" data-gal="m_PageScroll2id"
-										data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"
-										target="_self">
-										<span>Buy Beagle</span>
-									</a>
+									<div class="text-center" style="margin-top:30px">
+										<a class="btn btn-primary js-tilt  primary" href="#" data-gal="m_PageScroll2id"
+											data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"
+											target="_self">
+											<span>Buy Beagle</span>
+										</a>
+									</div>
 
 								</div>
 							</div>
@@ -784,10 +826,9 @@
 							<div class="wpb_text_column wpb_content_element  vc_custom_1525942228319">
 								<div class="wpb_wrapper">
 									<p>{{page.rescue_content}}</p>
-									<p>But unfortunately, thousands of Beagles actually need to be rescued worldwide. Our Rescue & Support program intents to help the Beagles and Humans across the world. Our first initiative #SavedByBeagles is to help with COVID relief in the much needed countries.</p>
-									<p>While our team is planning and strategizing the Beagle rescue mission.</p>
-									<p>You can be a part of these intitatives just by buying more and more BEAGLEs. If you wish to do more, please reachout to us. Beagles and Humans need all the support they can get.</p>
-									<p>We also intent to create a campaign platform for people to collect support and charity by running separate campaings. All transactions through BEAGLEs, free of charge.</p>
+									<p>But unfortunately, thousands of Beagles need to be rescued worldwide. Our Rescue & Support program intends to help Beagles and Humans all around the world. Our first initiative #SavedByBeagles is to help with COVID relief in the worst-hit countries.</p>
+									<p>While our team is planning and strategizing the Beagle rescue mission, you can support these initiatives just by buying more and more BEAGLEs. If you wish to do more, please reach out to us. Beagles and Humans need all the support that they can get.</p>
+									<p>We also intend to create a campaign platform for people to collect support and charity by running various campaigns. All of the transactions through BEAGLEs are free of charge.</p>
 								</div>
 							</div>
 						</div>
@@ -1095,7 +1136,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 footer text-center text-lg-left">
-						<p>© Copyright 2021 - Beagle</p>
+						<!-- <p>© Copyright 2021 - Beagle</p> -->
 					</div>
 					<div class="col-lg-6 footer mt-4 mr-auto mt-lg-0 mr-lg-0 text-center text-lg-right">
 						<!-- social icons -->
