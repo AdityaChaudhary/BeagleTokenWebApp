@@ -478,6 +478,51 @@
 		   text-decoration: none;
 		}
 
+		.address-text {
+			border: none;
+			font-size: 13px;
+		}
+		.copy-btn {
+			margin: 0;
+	    color: #ffffff;
+			padding: 14px 24px;
+	    border-color: #7b5eea;
+	    background-color: #7b5eea;
+	    border-radius: 0.25rem;
+			transition: all 0.2s;
+		}
+		.copy-btn:hover,
+		.copy-btn:active {
+			background-color: #6f5eea !important;
+			border-color: #6f5eea !important;
+		}
+		.link-btn {
+			padding: 14px;
+			background-color: #212121;
+			margin: 0;
+	    color: #ffffff;
+	    border-color: #212121;
+	    border-radius: 0.25rem;
+			transition: all 0.2s;
+		}
+		.link-btn:hover,
+		.link-btn:active {
+			background-color: #212121 !important;
+			border-color: #212121 !important;
+		}
+		.copy-field {
+			font-size: 14px;
+			font-family: "Menlo", monospace;
+			padding: 8px 20px;
+			overflow: none;
+			overflow-x: scroll;
+		}
+		.copy-field:focus,
+		.copy-field:active {
+			background-color: #e9ecef;
+			color: #212529;
+		}
+
 		@media all and (max-width: 575px) {
 			.vc_custom_1525939288403 {
 				padding: 30px 0 !important;
@@ -542,6 +587,10 @@
 			.ribbon-container:nth-child(5) .step-text {
 				padding: 3px 10px;
 			}
+
+			.copy-btn {
+				padding: 14px;
+			}
 		}
 	</style><noscript>
 		<style>
@@ -560,7 +609,7 @@
 			<div class="row">
 				<div class="col-12">
 					<nav class="navbar navbar-expand-lg navbar-light bg-light mx-lg-0">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="/">
 							<img src="./assets/beagle/beagle-logo.png" width="40" />
 							Beagle Inu
 						</a>
@@ -667,7 +716,7 @@
 					<div class="vc_column-inner ">
 						<p>
 							<span class="bold-beagle">Beagle</span> is the most loving & caring dog. Most ready for the moon spaceship! Your companion to the
-							<span class="text-underline">moon ride</span>. Your only worry would be why did't you get more of BEAGLES...
+							<span class="text-underline">moon ride</span>. Your only worry would be why you did't get more of BEAGLES...
 						</p>
 						<p>
 							Welcome to the
@@ -705,6 +754,30 @@
 							<div class="title-wrap text-center">
 								<div class="back-title ">{{page.metrics_heading}}</div>
 								<p></p>
+
+								<div class="input-group mb-4 shadow-none" style="max-width:700px; margin:0 auto;">
+									<div class="input-group-prepend">
+										<div class="input-group-text address-text">Address</div>
+									</div>
+									<input type="text" value="0x8a867726a564b6b2e921cb4280793aa8652c8465"
+									class="form-control border-0 copy-field" id="copyFieldToken" readonly="">
+									<div class="input-group-append">
+										<button class="btn btn-success copy-btn d-none d-sm-block" onclick="clipboardToken()">
+											<i class="fa fa-copy"></i> Copy
+										</button>
+										<button class="btn btn-success copy-btn d-block d-sm-none" onclick="clipboardToken()">
+											<i class="fa fa-copy"></i>
+										</button>
+									</div>
+									<div class="input-group-append">
+										<a class="btn btn-success link-btn" target="_blank"
+										href="https://etherscan.io/token/0x8a867726a564b6b2e921cb4280793aa8652c8465"
+										data-toggle="tooltip" data-placement="bottom" title="Open in Etherscan">
+											<i class="fa fa-external-link"></i>
+										</a>
+									</div>
+								</div>
+
 							</div>
 
 						</div>
@@ -736,6 +809,30 @@
 														</li>
 														{% endfor %}
 													</ul>
+
+													<div class="input-group mb-4 shadow-none">
+														<div class="input-group-prepend">
+															<div class="input-group-text address-text">Burn Pool</div>
+														</div>
+														<input type="text" value="0x24Cfc101FCa74bc207349998DF8DDCED4159136e"
+														class="form-control border-0 copy-field" id="copyField" readonly="">
+														<div class="input-group-append">
+															<button class="btn btn-success copy-btn d-none d-sm-block" onclick="clipboard()">
+																<i class="fa fa-copy"></i> Copy
+															</button>
+															<button class="btn btn-success copy-btn d-block d-sm-none" onclick="clipboard()">
+																<i class="fa fa-copy"></i>
+															</button>
+														</div>
+														<div class="input-group-append">
+															<a class="btn btn-success link-btn" target="_blank"
+															href="https://etherscan.io/address/0x24Cfc101FCa74bc207349998DF8DDCED4159136e"
+															data-toggle="tooltip" data-placement="bottom" title="Open in Etherscan">
+																<i class="fa fa-external-link"></i>
+															</a>
+														</div>
+													</div>
+
 												</div>
 											</div>
 										</div>
@@ -776,6 +873,30 @@
 														</li>
 														{% endfor %}
 													</ul>
+
+													<div class="input-group mb-4 shadow-none">
+														<div class="input-group-prepend">
+															<div class="input-group-text address-text">Rewards Pool</div>
+														</div>
+														<input type="text" value="0x9C0B61ed9D4342EeED0171f31DDe2861a8C13409"
+														class="form-control border-0 copy-field" id="copyFieldRewards" readonly="">
+														<div class="input-group-append">
+															<button class="btn btn-success copy-btn d-none d-sm-block" onclick="clipboardRewards()">
+																<i class="fa fa-copy"></i> Copy
+															</button>
+															<button class="btn btn-success copy-btn d-block d-sm-none" onclick="clipboardRewards()">
+																<i class="fa fa-copy"></i>
+															</button>
+														</div>
+														<div class="input-group-append">
+															<a class="btn btn-success link-btn" target="_blank"
+															href="https://etherscan.io/address/0x9C0B61ed9D4342EeED0171f31DDe2861a8C13409"
+															data-toggle="tooltip" data-placement="bottom" title="Open in Etherscan">
+																<i class="fa fa-external-link"></i>
+															</a>
+														</div>
+													</div>
+
 												</div>
 											</div>
 										</div>
@@ -1325,7 +1446,8 @@
 
 							<div class="text-center">
 								<a class="app-btn mx-2 mr-lg-3 social" style="font-size:60px"
-									 href="mailto:support@beagletoken.net" target="_blank" title="support@beagletoken.net">
+									 href="mailto:support@beagletoken.net" target="_blank"
+									 data-toggle="tooltip" data-placement="bottom" title="support@beagletoken.net">
 									<i class="fa fa-envelope"></i>
 								</a>
 								<a class="app-btn mx-2 mr-lg-3 social" style="font-size:60px"
@@ -1385,7 +1507,6 @@
 	</div>
 
 	<div class="scroll-to-top" style="display: none;">to top</div>
-
 	<script type="text/html" id="wpb-modifications"></script>
 	<script type="text/javascript" src="./assets/jquery.min.js"></script>
 	<script type="text/javascript" src="./assets/jquery.countdown.min.js"></script>
@@ -1401,6 +1522,31 @@
 	<script type="text/javascript" src="./assets/wp-embed.min.js"></script>
 	<script type="text/javascript" src="./assets/js_composer_front.min.js"></script>
 	<script type="text/javascript" src="./assets/forms.min.js"></script>
+
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+
+		function clipboard() {
+		  var copyText = document.getElementById("copyField");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+		  document.execCommand("copy");
+		}
+		function clipboardRewards() {
+		  var copyText = document.getElementById("copyFieldRewards");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+		  document.execCommand("copy");
+		}
+		function clipboardToken() {
+		  var copyText = document.getElementById("copyFieldToken");
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+		  document.execCommand("copy");
+		}
+	</script>
 
 
 
