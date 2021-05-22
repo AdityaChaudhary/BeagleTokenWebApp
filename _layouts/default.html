@@ -417,12 +417,10 @@
 		}
 		.step-text {
 			width: 100%;
-			height: 100%;
 			background: #ffffff;
 			color: #535353;
-			display: flex;
-	    align-items: center;
-	    padding-left: 10px;
+			display: block;
+	    padding: 6px 10px;
 			border: 2px solid #7b5eea;
 		}
 		.ribbon-container {
@@ -478,6 +476,72 @@
 		}
 		a.social { /* or whatever your class */
 		   text-decoration: none;
+		}
+
+		@media all and (max-width: 575px) {
+			.vc_custom_1525939288403 {
+				padding: 30px 0 !important;
+			}
+			.vc_custom_1528861557550 {
+				padding-bottom: 0 !important;
+				padding-top: 40px !important;
+			}
+			.vc_custom_1529913961539,
+			.vc_custom_1528861551065 {
+				padding-top: 40px !important;
+			}
+			.vc_custom_1528861569719 {
+				padding-top: 40px !important;
+				padding-bottom: 40px !important;
+			}
+			.title-wrap .back-title {
+				line-height: 1;
+			}
+			.margin-top-0 {
+				margin-top: 0 !important;
+			}
+			.hero-center-wrap p,
+			.custom-tc {
+				text-align: center !important;
+			}
+			p, .concept-box p {
+				text-align: justify;
+			}
+			.ribbon-container:after {
+				left: -1px;
+			}
+			.ribbon-container:nth-child(2),
+			.ribbon-container:nth-child(4),
+			.ribbon-container:nth-child(5) {
+				height: 54px;
+			}
+			.ribbon-container:nth-child(2)::before,
+			.ribbon-container:nth-child(4)::before,
+			.ribbon-container:nth-child(5)::before {
+				right: -27px;
+				border-left: 27px solid #7b5eea;
+		    border-top: 27px solid transparent;
+		    border-bottom: 27px solid transparent;
+			}
+			.ribbon-container:nth-child(2)::after,
+			.ribbon-container:nth-child(4)::after,
+			.ribbon-container:nth-child(5)::after {
+				border-left: 27px solid white;
+		    border-top: 27px solid transparent;
+		    border-bottom: 27px solid transparent;
+			}
+			.ribbon-pd {
+				padding-left: 0;
+			}
+			.step-text {
+				font-size: 14px;
+				padding: 8px 10px;
+			}
+			.ribbon-container:nth-child(2) .step-text,
+			.ribbon-container:nth-child(4) .step-text,
+			.ribbon-container:nth-child(5) .step-text {
+				padding: 3px 10px;
+			}
 		}
 	</style><noscript>
 		<style>
@@ -772,15 +836,26 @@
 						</div>
 
 						<div class="wpb_wrapper" data-wow-delay="0.3s" style="display: flex; align-items: center; justify-content: center;">
-							<div class="wpb_text_column wpb_content_element vc_custom_1529913961539 vc_col-sm-8"
+							<div class="wpb_text_column wpb_content_element vc_custom_1529913961539 vc_col-sm-8 ribbon-pd"
 									 style="padding-top: 50px !important;">
 								<div class="wpb_wrapper">
 									{% for data in page.buy_tokens_content %}
 									<div class="ribbon-container">
+										{% if forloop.index == 2 %}
 									  <div class="ribbon">
+											<span class="step-heading">Step 2</span>
+											<div class="step-text">
+												Navigate to
+												<a href="https://app.uniswap.org" target="_blank">https://app.uniswap.org</a>
+												and connect your wallet
+											</div>
+										</div>
+										{% else %}
+										<div class="ribbon">
 											<span class="step-heading">Step {{forloop.index + 1}}</span>
 											<div class="step-text">{{data}}</div>
 										</div>
+										{% endif %}
 									</div>
 									{% endfor %}
 									<div class="text-center" style="margin-top:30px">
@@ -1102,7 +1177,7 @@
 						<div class="wpb_wrapper ">
 							<div class="title-wrap text-center">
 								<div class="back-title ">{{page.lottery_heading}}</div>
-								<p>{{page.lottery_subtext}}</p>
+								<p class="custom-tc">{{page.lottery_subtext}}</p>
 								You buy BEAGLES. HODL! And you get the rewards.
 							</div>
 
@@ -1201,7 +1276,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-6">
+				<div class="mt-4 mt-md-0 wpb_column vc_column_container vc_col-sm-6 margin-top-0">
 					<div class="vc_column-inner " data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.5s "
 						data-scroll-reveal-id="24" data-scroll-reveal-initialized="true"
 						data-scroll-reveal-complete="true">
@@ -1245,7 +1320,7 @@
 						<div class="wpb_wrapper ">
 							<div class="title-wrap text-center">
 								<div class="back-title ">{{page.community_heading}}</div>
-								<p>{{page.community_subtext}}</p>
+								<p class="custom-tc">{{page.community_subtext}}</p>
 							</div>
 
 							<div class="text-center">
