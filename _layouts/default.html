@@ -470,6 +470,12 @@
 	    padding: 1px 5px;
 	    font-family: "Menlo", monospace;
 		}
+		.border-1 {
+			border-color: rgb(23, 153, 186);
+		}
+		.border-2 {
+			border-color: rgb(172, 76, 51);
+		}
 		a.social { /* or whatever your class */
 		   text-decoration: none;
 		}
@@ -660,7 +666,7 @@
 														{% for pointer in page.metrics_pointers_1 %}
 														<li style="text-transform:initial">
 															{{ pointer.text }}
-															<span class="pointer-value">
+															<span class="pointer-value border-1">
 																{{pointer.value}}
 															</span>
 														</li>
@@ -700,7 +706,7 @@
 														{% for pointer in page.metrics_pointers_2 %}
 														<li style="text-transform:initial">
 															{{ pointer.text }}
-															<span class="pointer-value">
+															<span class="pointer-value border-2">
 																{{pointer.value}}
 															</span>
 														</li>
@@ -1244,7 +1250,7 @@
 
 							<div class="text-center">
 								<a class="app-btn mx-2 mr-lg-3 social" style="font-size:60px"
-									 href="mailto:support@beagletoken.net" target="_blank">
+									 href="mailto:support@beagletoken.net" target="_blank" title="support@beagletoken.net">
 									<i class="fa fa-envelope"></i>
 								</a>
 								<a class="app-btn mx-2 mr-lg-3 social" style="font-size:60px"
