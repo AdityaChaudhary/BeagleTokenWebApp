@@ -2,7 +2,7 @@
 layout: home
 
 banner_heading: Decentralized Meme Tokens
-banner_subtext: Powered & Secured by Ethereum!
+banner_subtext: Powered & Secured by Ethereum! Your companion to the Moon!
 banner_subtext2: Whoo let the dogs out? Well, all the dogs are already out, now it's time for BEAGLE to shine.
 banner_subtext3: BEAGLE is the most loving & caring dog. Most ready for the moon spaceship! Your companion to the moon ride. Your only worry would be why did't you get more of BEAGLES...
 banner_subtext4: Welcome to the BEAGLE community-based and decentralized project! Hop on, as we launch to the moon.
@@ -23,7 +23,7 @@ metrics_pointers_2:
 
 buy_tokens_heading: How To Buy
 buy_tokens_subtext: The only place to buy or sell BEAGLE safely is on Uniswap. Beware of some scams with same token names.
-buy_tokens_content: ["Create a Wallet", "Navigate to https://app.uniswap.org and connect your wallet", "Buy some Ether (ETH)", "Swap Ether for BEAGLE! The more the merrier.", "HODL! Diamond hands will get most rewards and lotteries."]
+buy_tokens_content: ["Create a Wallet", "Navigate to https://app.uniswap.org and connect your wallet", "Buy some Ether (ETH)", "Swap Ether for BEAGLE! The more the merrier", "HODL! Diamond hands will get most rewards and lotteries"]
 
 ecosystem_heading: ecosystem
 ecosystem_subtext: Inspired by Ethereum’s vision, we have long committed to the ideals of permissionless access, security, and immutability, all indespensable components for a future where anyone in the world can access financial services without fear of discrimination or counterparty risk.
