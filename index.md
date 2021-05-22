@@ -7,6 +7,20 @@ banner_subtext2: Whoo let the dogs out? Well, all the dogs are already out, now 
 banner_subtext3: BEAGLE is the most loving & caring dog. Most ready for the moon spaceship! Your companion to the moon ride. Your only worry would be why did't you get more of BEAGLES...
 banner_subtext4: Welcome to the BEAGLE community-based and decentralized project! Hop on, as we launch to the moon.
 
+metrics_heading: Token Metrics
+metrics_pointers_1:
+- text: 50% of total supply will be burnt in 4 partial burn stages
+  value: 5,000,000,000 BEAGLE
+- text: 50% of the minted token will be available as total supply
+  value: 5,000,000,000 BEAGLE
+metrics_pointers_2:
+- text: 60% to Beagle Inu Community members
+  value: 3,000,000,000 BEAGLE
+- text: 20% to team members and future employees
+  value: 1,000,000,000 BEAGLE
+- text: 20% for rewards and rescue mission
+  value: 1,000,000,000 BEAGLE
+
 buy_tokens_heading: How To Buy
 buy_tokens_subtext: The only place to buy or sell BEAGLE safely is on Uniswap. Beware of some scams with same token names.
 buy_tokens_content: ["Create a Wallet", "Navigate to https://app.uniswap.org and connect your wallet", "Buy some Ether (ETH)", "Swap Ether for BEAGLE! The more the merrier.", "HODL! Diamond hands will get most rewards and lotteries."]

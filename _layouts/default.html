@@ -423,6 +423,7 @@
 			display: flex;
 	    align-items: center;
 	    padding-left: 10px;
+			border: 2px solid #7b5eea;
 		}
 		.ribbon-container {
 		  width: 100%;
@@ -433,31 +434,44 @@
 		  color: white;
 		  margin-top: 24px;
 			transform-style: preserve-3d;
-			border: 1px solid #7b5eea;
     	box-shadow: 0 8px 6px -6px rgb(0 0 0 / 30%);
 		}
 		.ribbon-container:before {
 			content: "";
 	    position: absolute;
 	    right: -20px;
-	    bottom: -1px;
+	    bottom: 0;
 	    width: 0;
 	    height: 0;
 	    z-index: -1;
-	    border-left: 20.5px solid #7b5eea;
-	    border-top: 20.5px solid transparent;
-	    border-bottom: 20.5px solid transparent;
+	    border-left: 20px solid #7b5eea;
+	    border-top: 20px solid transparent;
+	    border-bottom: 20px solid transparent;
 		}
 		.ribbon-container:after {
 		  content: "";
 		  position: absolute;
-		  left: -1px;
+		  left: 0;
 		  bottom: 0;
 		  width: 0;
 		  height: 0;
 		  border-left: 20px solid white;
 		  border-top: 20px solid transparent;
 		  border-bottom: 20px solid transparent;
+		}
+
+		@font-face {
+		  font-family: "Menlo";
+		  src: url('./assets/fonts/Menlo-Regular.woff') format('woff')
+		}
+		.pointer-value {
+	    border: 2px solid #7b5eea;
+			border-radius: 5px;
+	    padding: 1px 5px;
+	    font-family: "Menlo", monospace;
+		}
+		a.social { /* or whatever your class */
+		   text-decoration: none;
 		}
 	</style><noscript>
 		<style>
@@ -515,9 +529,10 @@
 									<a href="#community" class="nav-link _mPS2id-h">Community</a></li>
 							</ul>
 							<div class="header-btn">
-								<a class="btn btn-primary js-tilt _mPS2id-h" href="#" role="button"
-									data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Buy
-										Now</span></a>
+								<a class="btn btn-primary js-tilt _mPS2id-h" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8a867726a564b6b2e921cb4280793aa8652c8465" role="button"
+								target="_blank"
+									data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>BUY
+										BEAGLE</span></a>
 							</div>
 						</div>
 					</nav>
@@ -542,9 +557,14 @@
 										<p>{{page.banner_subtext2}}</p>
 									</div>
 								</div>
-								<a class="btn btn-primary js-tilt  primary  ml-lg-0" href="#" data-gal="m_PageScroll2id"
+								<a class="btn btn-primary js-tilt  primary  ml-lg-0" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8a867726a564b6b2e921cb4280793aa8652c8465" data-gal="m_PageScroll2id"
 									data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"
-									target="_self"><span>Whitepaper</span></a>
+									target="_blank">
+									<span>
+										Buy on Uniswap
+										<i class="fa fa-external-link"></i>
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -576,7 +596,7 @@
 				<div class="wpb_column vc_column_container vc_col-sm-12">
 					<div class="vc_column-inner ">
 						<p>
-							<span class="bold-beagle">BEAGLE</span> is the most loving & caring dog. Most ready for the moon spaceship! Your companion to the
+							<span class="bold-beagle">Beagle</span> is the most loving & caring dog. Most ready for the moon spaceship! Your companion to the
 							<span class="text-underline">moon ride</span>. Your only worry would be why did't you get more of BEAGLES...
 						</p>
 						<p>
@@ -606,6 +626,126 @@
 		</div>
 	</section>
 
+	<section id="metrics" class="wpb_row vc_row-fluid vc_custom_1528861557550 _mPS2id-t">
+		<div class="container">
+			<div class="row">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="title-wrap text-center">
+								<div class="back-title ">{{page.metrics_heading}}</div>
+								<p></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div class="vc_row wpb_row vc_inner vc_row-fluid">
+								<div class="align-self-center wpb_column vc_column_container vc_col-sm-7"
+											style="padding-bottom:30px">
+									<div class="vc_column-inner "
+										data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s "
+										data-scroll-reveal-id="15" data-scroll-reveal-initialized="true"
+										data-scroll-reveal-complete="true">
+										<div class="wpb_wrapper">
+											<div class="wpb_text_column wpb_content_element  vc_custom_1531474320862">
+												<div class="wpb_wrapper">
+													<p class="lead">
+													10 billion <span class="bold-beagle">Beagle Inu (BEAGLE)</span> have been minted at genesis and will become accessible over the course of 1 year. The initial allocation is as follows:
+													</p>
+													<ul class="app-list mb-5 mt-4">
+														{% for pointer in page.metrics_pointers_1 %}
+														<li style="text-transform:initial">
+															{{ pointer.text }}
+															<span class="pointer-value">
+																{{pointer.value}}
+															</span>
+														</li>
+														{% endfor %}
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="order-first order-md-last mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-5"
+											style="padding-bottom:30px">
+									<div class="vc_column-inner ">
+										<div class="wpb_wrapper">
+											<div class="img-wrap">
+												<img src="./assets/metrics-1.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="vc_row wpb_row vc_inner vc_row-fluid">
+								<div class="align-self-center wpb_column vc_column_container vc_col-sm-7"
+											style="padding-bottom:30px">
+									<div class="vc_column-inner "
+										data-scroll-reveal="enter bottom and move 50px over 0.6s after 0.3s "
+										data-scroll-reveal-id="15" data-scroll-reveal-initialized="true"
+										data-scroll-reveal-complete="true">
+										<div class="wpb_wrapper">
+											<div class="wpb_text_column wpb_content_element  vc_custom_1531474320862">
+												<div class="wpb_wrapper">
+													<h6 style="text-align: left" class="vc_custom_heading">
+														Market Supply (5 Billion BEAGLE)</h6>
+													<ul class="app-list mb-5 mt-4">
+														{% for pointer in page.metrics_pointers_2 %}
+														<li style="text-transform:initial">
+															{{ pointer.text }}
+															<span class="pointer-value">
+																{{pointer.value}}
+															</span>
+														</li>
+														{% endfor %}
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="order-first order-md-last mb-4 mb-md-0 wpb_column vc_column_container vc_col-sm-5">
+									<div class="vc_column-inner ">
+										<div class="wpb_wrapper">
+											<div class="img-wrap">
+												<img src="./assets/metrics-2.png" alt="">
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper ">
+							<div
+								class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_custom_1525939288403  vc_custom_1525939288403">
+								<span class="vc_sep_holder vc_sep_holder_l"><span
+										style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);"
+										class="vc_sep_line"></span></span><span
+									class="vc_sep_holder vc_sep_holder_r"><span
+										style="border-color:rgb(123,94,234);border-color:rgba(123,94,234,0.23);"
+										class="vc_sep_line"></span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
 
 	<section id="buy" class="wpb_row vc_row-fluid vc_custom_1529913961539 _mPS2id-t"
 		style="padding-top: 220px !important">
@@ -638,9 +778,9 @@
 									</div>
 									{% endfor %}
 									<div class="text-center" style="margin-top:30px">
-										<a class="btn btn-primary js-tilt  primary" href="#" data-gal="m_PageScroll2id"
+										<a class="btn btn-primary js-tilt  primary" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8a867726a564b6b2e921cb4280793aa8652c8465" data-gal="m_PageScroll2id"
 											data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"
-											target="_self">
+											target="_blank">
 											<span>Buy Beagle</span>
 										</a>
 									</div>
@@ -1103,11 +1243,15 @@
 							</div>
 
 							<div class="text-center">
-								<a class="app-btn mx-2 mr-lg-3" style="font-size:60px"
+								<a class="app-btn mx-2 mr-lg-3 social" style="font-size:60px"
+									 href="mailto:support@beagletoken.net" target="_blank">
+									<i class="fa fa-envelope"></i>
+								</a>
+								<a class="app-btn mx-2 mr-lg-3 social" style="font-size:60px"
 									 href="https://twitter.com/token_beagle" target="_blank">
 									<i class="fa fa-twitter-square"></i>
 								</a>
-								<a class="app-btn mx-2 mr-lg-3" style="font-size:60px"
+								<a class="app-btn mx-2 mr-lg-3 social" style="font-size:60px"
 								   href="https://www.reddit.com/user/BeagleToken" target="_blank">
 									<i class="fa fa-reddit-square"></i>
 								</a>
